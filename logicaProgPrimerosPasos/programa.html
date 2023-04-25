@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>PROGRAMA</h1>
+  <br>
+  <H1>PROGRAMA</H1>
+  <script>
+    function saltarLinea() {
+
+      document.write("<br>".repeat(3));
+      document.write("<hr>");
+      document.write("<br>".repeat(2));
+
+    }
+
+    function imprimir(frase) {
+
+      document.write("<big>" + frase + "</big>");
+      saltarLinea();
+
+    }
+
+    var anho = 2025;
+    var saltoLinea = "<br><br><br>";
+
+    imprimir("hola amigos");
+
+    // este codigo calcula las edad de juan pedro y carlos
+
+    imprimir("Juan tiene: " + (anho - 2000) + " años");
+
+    imprimir("Pedro tiene: " + (anho - 1995) + " años");
+
+    anho = 2030;
+
+    imprimir("Carlos tiene: " + (anho - 2005) + " años");
+
+    anho = 2020;
+
+    /*var edadPaola = 10;
+    var edadJimena = 25;
+    var edadLaura = 15;
+
+    var nome1 = "Paola";
+    var nome2 = "Jimena";
+    var nome3 = "Laura";
+
+    var promedio = (edadPaola + edadLaura + edadJimena) / 3;
+
+    document.write("El promedio de las edades de: " + nome1 + "," + nome2 + "," + nome3 + " es : " + Math.round(
+      promedio) + " años");
+    document.write("<br>");*/
+  </script>
+</body>
+
+</html>

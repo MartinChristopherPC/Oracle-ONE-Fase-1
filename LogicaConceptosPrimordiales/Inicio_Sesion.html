@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Juego de Adivinacion</h1>
+  <script>
+    function saltarLinea() {
+      document.write("<br>");
+    }
+
+    function imprimir(frase) {
+      document.write(frase);
+      saltarLinea();
+    }
+
+    var inicioDeSesionRegistrado = "alura";
+    var contrasenhaRegistrada = "alura321";
+    var intentos = 3;
+    var contador = 1;
+
+    var inicioDeSesionIngresado;
+    var contrasenhaIngresada;
+
+    while (contador <= intentos) {
+      inicioDeSesionIngresado = prompt("Ingrese su usuario");
+      contrasenhaIngresada = prompt("Ingrese su contraseña");
+
+      if (inicioDeSesionRegistrado == inicioDeSesionIngresado && contrasenhaRegistrada == contrasenhaIngresada) {
+        alert("Bienvenido al sistema " + inicioDeSesionIngresado);
+        break;
+      } else {
+        if (intentos = 3) {
+          alert("Agotaste el numero permitido de intentos");
+        } else {
+          alert("inicio de sesión inválido. Favor intente de nuevo");
+        }
+
+      }
+
+      contador++;
+    }
+  </script>
+</body>
+
+</html>

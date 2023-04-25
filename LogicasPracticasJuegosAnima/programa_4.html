@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <canvas width="600" height="400"> </canvas>
+
+    <script>
+      let pantalla = document.querySelector("canvas");
+      let pincel = pantalla.getContext("2d");
+      pincel.fillStyle = "grey";
+      pincel.fillRect(0, 0, 600, 400);
+
+      function disenarCircunferencia(x, y, radio) {
+        pincel.fillStyle = "blue";
+        pincel.beginPath();
+        pincel.arc(x, y, radio, 0, 2 * Math.PI);
+        pincel.fill();
+      }
+
+      function limpiarPantalla() {
+        pincel.clearRect(0, 0, 600, 400);
+      }
+
+      let x = 0;
+
+      function actualizarPantalla() {
+        limpiarPantalla();
+        disenarCircunferencia(x, 20, 10);
+        x++;
+      }
+
+      setInterval(actualizarPantalla, 10);
+    </script>
+  </body>
+</html>

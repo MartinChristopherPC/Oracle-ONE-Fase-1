@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h3>Alcohol o gasolina?</h3>
+
+  <script>
+    function calcularEficiencia(distanciaRecorrida, litrosGastados) {
+      var eficiencia = distanciaRecorrida / litrosGastados;
+      return eficiencia;
+    }
+    var litros = 40;
+    var distancia;
+
+    distancia = 480;
+    document.write("la eficiencia de un auto de " + litros + " litros que recorre una distancia de " + distancia +
+      " es: " + calcularEficiencia(distancia, litros));
+    document.write("<br>");
+    distancia = 300;
+    document.write("la eficiencia de un auto de " + litros + " litros que recorre una distancia de " + distancia +
+      " es: " + calcularEficiencia(distancia, litros));
+
+    console.log(calcularEficiencia(distancia, litros));
+  </script>
+</body>
+
+</html>
